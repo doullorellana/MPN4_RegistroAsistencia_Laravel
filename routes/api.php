@@ -1,8 +1,10 @@
     <?php
 
 use App\Http\Controllers\AlumnoController;
+use App\Http\Controllers\AsistenciaController;
 use App\Http\Controllers\CursoController;
 use App\Http\Controllers\DocenteController;
+use App\Http\Controllers\MatriculaController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -43,3 +45,19 @@ Route::post('/cursos',[CursoController::class, 'store']);
 Route::put('/cursos/{id}',[CursoController::class, 'update']);
 Route::get('/cursos/{id}',[CursoController::class, 'show']);
 Route::delete('/cursos/{id}',[CursoController::class, 'destroy']);
+
+
+// Rutas para las Matriculas
+Route::get('/matriculas',[MatriculaController::class, 'index']);
+Route::post('/matriculas',[MatriculaController::class, 'store']);
+Route::put('/matriculas/{id}',[MatriculaController::class, 'update']);
+Route::get('/matriculas/{id}',[MatriculaController::class, 'show']);
+Route::delete('/matriculas/{id}',[MatriculaController::class, 'destroy']);
+
+
+// Rutas para el Registro de Asistencias
+Route::get('/asistencias',[AsistenciaController::class, 'index']);
+Route::post('/asistencias',[AsistenciaController::class, 'store']);
+Route::put('/asistencias/{id}',[AsistenciaController::class, 'update']);
+Route::get('/asistencias/{id}',[AsistenciaController::class, 'show']);
+Route::delete('/asistencias/{id}',[AsistenciaController::class, 'destroy']);
