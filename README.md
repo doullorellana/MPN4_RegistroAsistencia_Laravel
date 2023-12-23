@@ -4,4 +4,4 @@ Mini Proyecto Nivel 4. Una institución educativa desea crear un sistema para ma
 ## Elementos del CRUD
 
 ### Mostrando el contenido del PDF cargado en este repositorio
-![MiniProyectoN4_DoullOrellana.pdf](./public/MiniProyectoN4_DoullOrellana.PDF)
+![MiniProyectoN4_DoullOrellana.pdf](./public)
