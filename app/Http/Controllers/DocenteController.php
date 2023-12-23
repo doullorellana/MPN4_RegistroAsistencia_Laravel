@@ -42,9 +42,10 @@ class DocenteController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Docente $docente)
+    public function show($id)
     {
-        //
+        $id = Docente::find($id);
+        return $id;
     }
 
     /**

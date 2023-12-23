@@ -25,6 +25,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/docentes',[DocenteController::class, 'index']);
 Route::post('/docentes',[DocenteController::class, 'store']);
 Route::put('/docentes/{id}',[DocenteController::class, 'update']);
+Route::get('/docentes/{id}',[DocenteController::class, 'show']);
 Route::delete('/docentes/{id}',[DocenteController::class, 'destroy']);
 
 
@@ -32,6 +33,7 @@ Route::delete('/docentes/{id}',[DocenteController::class, 'destroy']);
 Route::get('/alumnos',[AlumnoController::class, 'index']);
 Route::post('/alumnos',[AlumnoController::class, 'store']);
 Route::put('/alumnos/{id}',[AlumnoController::class, 'update']);
+Route::get('/alumnos/{id}',[AlumnoController::class, 'show']);
 Route::delete('/alumnos/{id}',[AlumnoController::class, 'destroy']);
 
 
@@ -39,4 +41,5 @@ Route::delete('/alumnos/{id}',[AlumnoController::class, 'destroy']);
 Route::get('/cursos',[CursoController::class, 'index']);
 Route::post('/cursos',[CursoController::class, 'store']);
 Route::put('/cursos/{id}',[CursoController::class, 'update']);
+Route::get('/cursos/{id}',[CursoController::class, 'show']);
 Route::delete('/cursos/{id}',[CursoController::class, 'destroy']);

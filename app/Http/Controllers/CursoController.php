@@ -37,9 +37,10 @@ class CursoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Curso $curso)
+    public function show($id)
     {
-        //
+        $id = Curso::find($id);
+        return $id;
     }
 
     /**

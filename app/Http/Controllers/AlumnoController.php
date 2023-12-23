@@ -42,9 +42,10 @@ class AlumnoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Alumno $alumno)
+    public function show($id)
     {
-        //
+        $id = Alumno::find($id);
+        return $id;
     }
 
     /**
